@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sprint-2-1</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- cambio col 12 per col sm centra contenuto -->
+        <div class="row col-sm justify-content-center">
+            <!-- BARRA NAVEGACIÓN -->
+            <div class="bg-lg-white bgMenu">
+                <nav class="navbar navbar-expand-lg  navbar-dark ">
+                    <div class="container-fluid">
+                        <a href="#" class="navbar-brand bgMenu logo-black"><img src="./images/logo-bookmark.svg"></a>
+                        <a href="#" class="navbar-brand bgMenu logo-white"><img src="./images/logo-bb.jpg"></a>
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                            data-bs-target="#MenuNavegacion">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div id="MenuNavegacion" class="collapse navbar-collapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center ">
+                            <li class="nav-item">
+                                <a class="nav-link  active color-link" href="#">FEATURES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  color-link" href="#">PRICING</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-link" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                       
+                                <div class="row justify-content-center m-3">
+                                    
+                                <button type="button" class="btn btn-secondary text-white button-login-menu">LOGIN</button>
+                            </div>
+                          
+                    </div>
+                </nav>
+            </div>
+            <!--CIERRE BARRA NAVEGACIÓN -->
+            <!--CONTENIDO -->
+            <section class="container">
+                <!-- PRIMERA ROW -->
+                <div class="row mt-5">
+                    <!-- columna 1 -->
+
+                    <div class="col justify-content-center col-lg-6">
+                        <img src="./images/illustration-hero.svg" class="img-fluid alt=" Responsive image">
+                    </div>
+
+                    <!-- intento hacer mancha azul pero no lo consigo-->
+
+                    <!--  <div class="col-12 col-lg-6 p-2 border border-danger border-3 align-items-start">
+                    <div class="container-azul posicion-relative  border border-success border-3  overflow-x:hidden">
+                        <div class="mancha  posicion absolute-posicion rounded-pill bg-primary">
+                        <img src="./images/illustration-features-tab-1.svg" class="img-fluid" alt="" style=" max-width: 100%;"></div>
+                        </div>
+                        </div>
+                   -->
+                    <!--columna 2-->
+                    <div class="col-12 justify-content-center col-lg-6 order-md-first p-2 simple">
+                        <div class="container d-flex p-5 ">
+                            <div class="row justify-content-lg-center">
+                                <div class="col-12">
+                                    <p class="h1 simple">A Simple Bookmark<br>
+                                        Manager</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="fs-6 lh-2 testo-gris ">A clear y simple interface to organizer your
+                                        favorite webside. Open a new browser tab and see your sites load instantly.
+                                        <br>Try it for free.
+                                    </p>
+                                </div>
+                                <div class="container-flex ">
+                                    <!--hay que centrar los botones en sm-->
+                                    <nav class="navbar navbar-light bg-transparent">
+                                        <div class="d-flex gap-3">
+                                            <a class="btn btn-md btn-primary shadow-sm" href="#" role="button">Get it on
+                                                Chrome</a>
+                                            <a class="btn btn-md btn-light border-grey shadow-sm" href="#" role="button"">Get it on Firefox</a>
+                                        </div>
+                                      </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- row 2-FEATURES-->
+
+
+                    <article class=" container d-flex justify-content-center pt-5">
+                        <div class=" row justify-content-center">
+                                               
+                                                <div class="col-12 col-lg-6">
+                                                    <h2 class="h2 text-center pb-3">Features<br></h2>
+                                                    <p class="text-center pb-3 testo-gris">
+                                                        Our aim is to make it quick and
+                                                        easy for you to access your favorite websites.
+                                                        Your bookmarks sync between your devices so you can access them
+                                                        on the go.
+                                                    </p>
+                                                </div>
+                                                </div>
+                                        </article>
+
+                                        <!-- seccion 2 con tab-->
+
+                                        <div
+                                            class="container d-flex justify-content-center align-items-center pt-5  pb-5">
+                                            <div class="col-12">
+                                                <!-- tab-->
+                                                <ul class="nav  nav-tabs justify-content-center mb-5 flex-column flex-sm-row align-items-center "
+                                                    id="Tab-features" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link little-box active" id="Simply-tab"
+                                                            data-bs-toggle="tab" data-bs-target="#Simply" type="button"
+                                                            role="tab" aria-controls="Simply"
+                                                            aria-selected="true">Simply
+                                                            Bookmarking
+                                                        </button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link little-box" id="Speedy-tab"
+                                                            data-bs-toggle="tab" data-bs-target="#Speedy" type="button"
+                                                            role="tab" aria-controls="Speedy"
+                                                            aria-selected="false">Speedy Searching
+                                                        </button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link little-box" id="Easy-tab"
+                                                            data-bs-toggle="tab" data-bs-target="#Easy" type="button"
+                                                            role="tab" aria-controls="Easy" aria-selected="false">Easy
+                                                            Sharing
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content" id="featuresContent">
+                                                    <div class="tab-pane fade show active" id="Simply" role="tabpanel"
+                                                        aria-labelledby="Simply-tab">
+                                                        <!-- tab-simply-->
+                                                        <div class="container d-flex align-items-center">
+                                                            <div class="row justify-content-lg-start">
+                                                                <div
+                                                                    class="col-12 col-lg-6 p-2 align-items-start">
+                                                                    <img src="./images/illustration-features-tab-1.svg"
+                                                                        class="img-fluid" alt=""
+                                                                        style=" max-width: 100%;">
+                                                                </div>
+                                                                <!---->
+                                                                <div
+                                                                    class="col-12 align-items-start col-lg-6 p-5  align-items-start">
+                                                                    <div
+                                                                        class="container m-0 ">
+                                                                        <div class="col-12">
+                                                                            <p class="h2">Bookmark in one click
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="col-12 simple">
+                                                                            <p
+                                                                                class=" fs-6 lh-2 text-wrap simple testo-gris">
+                                                                                Organize your bookmarks however
+                                                                                you like. Our simple
+                                                                                drag-and-drop interface given
+                                                                                you complete control over how
+                                                                                you manage your favorite sites.
+                                                                            </p>
+                                                                            <a class=" btn btn-sm btn-primary" href="#"
+                                                                                role="button">More Info
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- tab-speedy-->
+                                                    <div class="tab-pane fade" id="Speedy" role="tabpanel"
+                                                        aria-labelledby="Speedy-tab">
+                                                        <div class="container d-flex align-items-center">
+                                                            <div class="row justify-content-lg-start">
+                                                                <div
+                                                                    class="col-12 col-lg-6 p-2  align-items-start">
+                                                                    <img src="./images/illustration-features-tab-2.svg"
+                                                                        class="img-fluid" alt=""
+                                                                        style=" max-width: 100%;">
+                                                                </div>
+                                                                <!---->
+                                                                <div
+                                                                    class="col-12 align-items-start col-lg-6 p-5  align-items-start">
+                                                                    <div
+                                                                        class="container m-0 ">
+                                                                        <div class="col-12">
+                                                                            <p class="h2">Intelliget Search</p>
+                                                                        </div>
+                                                                        <div class="col-12 simple">
+                                                                            <p
+                                                                                class=" fs-6 lh-2 text-wrap simple testo-gris">
+                                                                                Our powerful search feature will
+                                                                                help you find saved sites in no
+                                                                                time at all. No need to trawl
+                                                                                through all of your bookmarks.
+                                                                            </p>
+                                                                            <a class=" btn btn-sm btn-primary" href="#"
+                                                                                role="button">More Info
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- tab-Easy-->
+                                                    <div class="tab-pane fade" id="Easy" role="tabpanel"
+                                                        aria-labelledby="Easy-tab">
+                                                        <div class="container d-flex align-items-center">
+                                                            <div class="row justify-content-lg-start">
+                                                                <div
+                                                                    class="col-12 col-lg-6 p-2 align-items-start">
+                                                                    <img src="./images/illustration-features-tab-3.svg"
+                                                                        class="img-fluid" alt=""
+                                                                        style=" max-width: 100%;">
+                                                                </div>
+                                                                <!---->
+                                                                <div
+                                                                    class="col-12 align-items-start col-lg-6 p-5  align-items-start">
+                                                                    <div
+                                                                        class="container  m-0 ">
+                                                                        <div class="col-12">
+                                                                            <p class="h2">Share your bookmarks
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="col-12 simple">
+                                                                            <p
+                                                                                class=" fs-6 lh-2 text-wrap simple testo-gris">
+                                                                                Easy share your bookmarks and
+                                                                                collection with others. Create a
+                                                                                shareable link that you can send
+                                                                                at the click of button.
+                                                                            </p>
+                                                                            <a class=" btn btn-sm btn-primary" href="#"
+                                                                                role="button">More Info
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--seccion 3 con cards-->
+                                        <article class="container col-sm  justify-content-center   pt-5 ">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-3"></div>
+                                                <div class=" col-lg-6 justify-content-center">
+                                                    <h2 class="h2 text-center pb-3">Download the extension<br>
+                                                    </h2>
+                                                    <p class="text-center pb-3 testo-gris">
+                                                        We've got more browsers in the pipeline. Please do let
+                                                        us know if you've got a favourite you'd like us to
+                                                        prioritize. </p>
+
+                                                </div>
+                                                <div class=" col-12 col-lg-3"></div>
+
+                                                <!--contenedor col cards-->
+
+                                                <div class="container col-sm ">
+
+                                                    <div class="row  justify-content-center col-sm ">
+                                                        <div class="col-12 col-xl-1"></div>
+
+                                                        <!--container cards-->
+                                                        <div
+                                                            class="col-12 justify-content-center  col-lg-10 col-xl-8  mb-5">
+                                                            <div class="container-flex">
+                                                                <div class="row gy-3 justify-content-center "
+                                                                    style="min-height: 25rem;">
+                                                                    <!--card-1-->
+                                                                    <div
+                                                                        class="col-12 align-items-center col-lg-4 align-self-start align-items-center ">
+                                                                        <div
+                                                                            class="row  justify-content-end col-sm justify-content-center">
+                                                                            <div class="card  bg-white border-0 shadow p-1 align-items-center "
+                                                                                style="max-width:15rem;height: 20rem; ">
+                                                                                <img src="images/logo-chrome.svg"
+                                                                                    class="card-img-top pt-5 text-center"
+                                                                                    style="width: 35%;" alt="...">
+                                                                                <div class="card-body  text-center">
+                                                                                    <h5 class="card-title">Add
+                                                                                        to Chrome</h5>
+                                                                                    <p class="card-text card-t">
+                                                                                        Minimun version 62 </p>
+                                                                                    <hr class="card-hr mb-4">
+                                                                                    </hr>
+                                                                                    <a href="#"
+                                                                                        class="btn btn-primary">Add
+                                                                                        & install extension</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <!--card-2-->
+                                                                    <div class="col-12  col-lg-4 align-self-center">
+                                                                        <div
+                                                                            class="row  justify-content-center col-sm ">
+                                                                            <div class="card  bg-white border-0 shadow p-1  align-items-center"
+                                                                                style="max-width: 15rem;height: 20rem;">
+                                                                                <img src="images/logo-firefox.svg"
+                                                                                    class="card-img-top pt-5"
+                                                                                    style="width: 35%;" alt="...">
+                                                                                <div class="card-body text-center">
+                                                                                    <h5 class="card-title">Add
+                                                                                        to Firefox</h5>
+                                                                                    <p class="card-text card-t">
+                                                                                        Minimun version 55 </p>
+                                                                                    <hr class="card-hr mb-4">
+                                                                                    </hr>
+                                                                                    <a href="#"
+                                                                                        class="btn btn-primary">Add
+                                                                                        & install extension</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <!--card-3-->
+                                                                    <div class="col-12 col-lg-4  align-self-end">
+                                                                        <div
+                                                                            class="row justify-content-start col-sm  justify-content-center">
+                                                                            <div class="card   bg-white border-0 shadow p-1 align-items-center"
+                                                                                style="max-width: 15rem;height: 20rem;">
+                                                                                <img src="images/logo-opera.svg"
+                                                                                    class="card-img-top pt-5"
+                                                                                    style="width: 35%;" alt="...">
+                                                                                <div class="card-body text-center">
+                                                                                    <h5 class="card-title">Add
+                                                                                        to Opera</h5>
+                                                                                    <p class="card-text card-t">
+                                                                                        Minimun version 46</p>
+                                                                                    <hr class="card-hr mb-4">
+                                                                                    </hr>
+                                                                                    <a href="#"
+                                                                                        class="btn btn-primary ">Add
+                                                                                        & install extension</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-xl-1"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <!--seccion con accordion-->
+                                        <article class="container">
+                                            <div class="row">
+                                                <div class="col-sm"></div>
+                                                <div class=" col-lg-6 justify-content-center">
+                                                    <h2 class="h2 text-center pb-3">Frequently Asked Question
+                                                        <br>
+                                                    </h2>
+                                                    <p class="text-center pb-3 testo-gris">
+                                                        Here are some of our FAQs. If you have any other
+                                                        questions you'd like answered please feel free to email
+                                                        us. </p>
+                                                </div>
+                                                <div class="col-sm"> </div>
+                                            </div>
+                                            <div class="row justify-content-center">
+                                                <div class="col-sm"> </div>
+                                                <div class="col-10 col-lg-5">
+                                                    <!--accordion-->
+                                                    <div class="accordion" id="accordionFaqs">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingOne">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#collapseOne" aria-expanded="false"
+                                                                    aria-controls="collapseOne">
+                                                                    What is Bookmark?
+                                                                </button>
+                                                               
+                                                            </h2>
+                                                            <div id="collapseOne" class="accordion-collapse collapse"
+                                                                aria-labelledby="headingOne"
+                                                                data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    Lorem ipsum dolor sit amet, consectetur
+                                                                    adipiscing elit, sed do eiusmod tempor
+                                                                    incididunt ut labore et dolore magna aliqua.
+                                                                    Ut enim ad minim veniam, quis nostrud
+                                                                    exercitation ullamco laboris nisi ut aliquip
+                                                                    ex ea commodo consequat. Duis aute irure
+                                                                    dolor in reprehenderit in voluptate velit
+                                                                    esse cillum dolore eu fugiat nulla pariatur.
+                                                                    Excepteur sint occaecat cupidatat non
+                                                                    proident, sunt in culpa qui officia deserunt
+                                                                    mollit anim id est laborum.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingTwo">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#collapseTwo" aria-expanded="false"
+                                                                    aria-controls="collapseTwo">
+                                                                    How can I request a new browser?
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                                aria-labelledby="headingTwo"
+                                                                data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    Ut enim ad minima veniam, quis nostrum
+                                                                    exercitationem ullam corporis suscipit
+                                                                    laboriosam, nisi ut aliquid ex ea commodi
+                                                                    consequatur? Quis autem vel eum iure
+                                                                    reprehenderit qui in ea voluptate velit esse
+                                                                    quam nihil molestiae consequatur, vel illum
+                                                                    qui dolorem eum fugiat quo voluptas nulla
+                                                                    pariatur?
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingThree">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#collapseThree"
+                                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                                    Is there the mobile app?
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                                aria-labelledby="headingThree"
+                                                                data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    Sed ut perspiciatis unde omnis iste natus
+                                                                    error sit voluptatem accusantium doloremque
+                                                                    laudantium, totam rem aperiam, eaque ipsa
+                                                                    quae ab illo inventore veritatis et quasi
+                                                                    architecto beatae vitae dicta sunt
+                                                                    explicabo. Nemo enim ipsam voluptatem quia
+                                                                    voluptas sit aspernatur aut odit aut fugit,
+                                                                    sed quia consequuntur magni dolores eos qui
+                                                                    ratione voluptatem sequi nesciunt. Neque
+                                                                    porro quisquam est, qui dolorem ipsum quia
+                                                                    dolor sit amet, consectetur, adipisci velit,
+                                                                    sed quia non numquam eius modi tempora
+                                                                    incidunt ut labore et dolore magnam aliquam
+                                                                    quaerat voluptatem.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingFour">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#collapseFour" aria-expanded="false"
+                                                                    aria-controls="collapseFour">
+                                                                    What about other Chromium browser?
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseFour" class="accordion-collapse collapse"
+                                                                aria-labelledby="headingFour"
+                                                                data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    At vero eos et accusamus et iusto odio
+                                                                    dignissimos ducimus qui blanditiis
+                                                                    praesentium voluptatum deleniti atque
+                                                                    corrupti quos dolores et quas molestias
+                                                                    excepturi sint occaecati cupiditate non
+                                                                    provident, similique sunt in culpa qui
+                                                                    officia deserunt mollitia animi, id est
+                                                                    laborum et dolorum fuga.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row justify-content-center ">
+                                                        <a class="btn btn-md btn-primary m-5 p-2 " href="#"
+                                                            role="button" style="width:25%; ">More Info</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm"> </div>
+                                            </div>
+                                        </article>
+                                </div>
+            </section>
+        </div>
+    </div>
+    <!--FOOTER -->
+    <footer class="container">
+        <div class="row">
+            <div class="container-footer d-flex justify-content-center">
+
+            
+                <!--FORM-->
+                <div class="col-12 col-lg-4 text-center ">
+<h6 class="h6 text-white mt-5">35.000 + ALREADY JOINED</h6>
+<h3 class="h3 text-white mt-5 mb-5">Stay up-to-date with what we're doing</h3>
+
+                    <form>
+                        <div class="row g-3">
+                        <div class="col-lg-6" >
+                        <input type="email" class="form-control "id="contactus" placeholder="Enter your email address" name="contactus" required></div>
+                        <div class="col-lg-6">  
+                        <button type="submit" class="btn btn-secondary text-white mb-5 ">Contact Us</button>
+                    </div></div>
+                    </form>
+                </div>
+               
+
+
+            </div>
+        </div>
+        <div class="row d-flex">
+            <!-- BARRA NAVEGACIÓN FOOTER -->
+            <div class="bgMFooter">
+                <nav class="navbar navbar-expand-lg  navbar-dark ">
+                    <div class="container-fluid">
+                        <a href="#" class="navbar-brand"><img src="./images/logo-bb.jpg"></a>
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                            data-bs-target="#MenuFooter">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div id="MenuFooter" class="collapse navbar-collapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" href="#">FEATURES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">PRICING</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                        <div class="container d-flex justify-content-center ">
+                            <div class="row" style="min-width: 6.25rem;">
+                                <div class="col-6">
+                                    <a href="#"><img src="./images/icon-facebook.svg"></a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#"><img src="./images/icon-twitter.svg"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </nav>
+            </div>
+            <!--CIERRE MENU FOOTER-->
+
+        </div>
+    </footer>
+    </div>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

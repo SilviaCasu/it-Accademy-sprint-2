@@ -1,0 +1,171 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+.color-link {
+    color: #000000 !important;
+}
+
+.navbar-toggler {
+    border-color: transparent !important
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.logo-white {
+    display:none;
+}
+.logo-black {
+    display:block;
+}
+#MenuNavegacion ul li a:hover {
+    color: #fb6a6a!important;
+}
+.btn-secondary:hover {
+    color: #fb6a6a!important;
+    background-color: #ffffff!important;
+    border-color: #fb6a6a;
+}
+.btn-light:hover {
+    color: #000000!important;
+    background-color: #ffffff!important;
+    border-color: #000000 1px solid!important;
+}
+
+.btn-primary:hover {
+    color: #242946!important;
+    background-color: #ffffff!important;
+    
+}
+
+
+@media (min-width : 480px) and (max-width :567px) {
+    .simple {
+        text-align: center;
+    }
+}
+
+@media (min-width : 480px) and (max-width :991px) {
+    .bgMenu {
+        background-color: #242946 !important;
+    }
+
+    .color-link {
+        color: #fdfdfd !important;
+    }
+
+    .button-login-menu {
+        background: transparent !important;
+        border: 1px solid #fdfdfd !important;
+    }
+    .logo-black {
+        display:none;
+    }
+    .logo-white {
+        display:block;
+    }
+
+}
+
+
+
+
+$primary: #5265E1;
+$secondary: #FA5959;
+$enable-shadows: true;
+//$nav-link-font-weight: bold;
+$nav-tabs-border-width: 0;
+$nav-link-color: #6b6e6b;
+$nav-link-disabled-color: #2b2424;
+$nav-link-hover-color: #FA5959;
+$nav-link-padding-x: 2rem;
+$accordion-button-icon: url(../images/icon-arrow.svg);
+$accordion-button-active-icon: url(../images/icon-arrow-active.png);
+$accordion-button-active-bg: white;
+$accordion-button-focus-box-shadow: grey;
+$accordion-button-active-color: #FA5959;
+
+.little-box {
+    font-weight: bold;
+    //border-bottom: #6b6e6b 1px solid;
+}
+
+.little-box.active {
+    border-bottom: 2px solid $secondary  !important;
+}
+
+.img {
+    max-width: 100%;
+}
+
+.container-azul {
+
+    width: 1000px;
+    height: 500px;
+    z-index: 1;
+    overflow-x: hidden;
+
+}
+
+.mancha {
+
+    width: 100%;
+    height: 80%;
+    z-index: 20;
+}
+
+.posicion {
+
+    top: 250px;
+}
+
+.card-t {
+    color: #bdbcc1;
+
+}
+
+.testo-gris {
+    color: #8b8a8d;
+
+}
+
+.card-hr {
+
+    border-style: none;
+    border-top-style: dotted;
+    border-color: lightgrey;
+    border-width: 2px;
+
+}
+
+.bgMFooter {
+    background-color: #242946;
+}
+
+
+
+
+#MenuFooter {
+    text-align: center;
+
+}
+
+.container-footer {
+    background-color: #5265E1;
+}
+
+
+body {
+    background-color: #bdbcc1;
+    overflow-x: hidden;
+}
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
